@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .content h2 {
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .image-gallery {
+    margin-top: 30px;
+  }
+  
+  .image-gallery h2 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+ 
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  
+    .gallery img {
+      width: 100%; 
+      height: auto;
+    }
+  }
+  
+  
+  @media (min-width: 601px) and (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .content h2 {
+      font-size: 1.6rem;
+    }
+  
+    .content p {
+      font-size: 1.1rem;
+    }
+  
+    .gallery img {
+      width: 45%; 
+    }
+  }
+  
+  
+  @media (min-width: 769px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .content h2 {
+      font-size: 2rem;
+    }
+  
+    .content p {
+      font-size: 1.2rem;
+    }
+  
+    .gallery img {
+      width: 23%; 
+    }
+  }
+  

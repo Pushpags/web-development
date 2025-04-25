@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Responsive Card with Bulma</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    .card-image img {
+      max-height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card {
+      margin: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-content .content {
+      font-size: 14px;
+      color: #4a4a4a;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .button-container .button {
+      margin: 5px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+   
+    <div class="columns is-mobile is-multiline">
+      <div class="column is-12-mobile is-4-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Card Title</p>
+                <p class="subtitle is-6">Card Subtitle</p>
+              </div>
+            </div>
+
+            <div class="content">
+              This is some content inside the card. You can place any text here.
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="button is-primary">Learn More</button>
+            <button class="button is-link">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="column is-12-mobile is-4-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Card Title 2</p>
+                <p class="subtitle is-6">Card Subtitle 2</p>
+              </div>
+            </div>
+
+            <div class="content">
+              More content here for the second card.
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="button is-primary">Learn More</button>
+            <button class="button is-link">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

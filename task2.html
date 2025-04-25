@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Change Button</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button.clicked {
+      background-color: #28a745; 
+    }
+  </style>
+</head>
+<body>
+
+  <button id="colorButton">Click Me!</button>
+
+  <script>
+    const button = document.getElementById('colorButton');
+
+    button.addEventListener('click', () => {
+      button.classList.toggle('clicked');
+    });
+  </script>
+</body>
+</html>
